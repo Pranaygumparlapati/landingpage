@@ -1,33 +1,68 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    height: 200vh;
+    text-align: center;
+    background: linear-gradient(to right, #141E30, #243B55);
+    color: white;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #ed6161;
-    padding: 15px 20px;
-    display: flex;
-    justify-content: center;
-    transition: background 0.3s, padding 0.3s;
+.container {
+    margin-top: 50px;
 }
 
-.navbar.scrolled {
-    background: #00f863;
+.timer {
+    font-size: 3rem;
+    margin: 20px 0;
+}
+
+.buttons button {
+    font-size: 1.2rem;
     padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
 
-.navbar a {
-    color: rgb(246, 248, 249);
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s;
+#startBtn {
+    background-color: #28a745;
+    color: white;
 }
 
-.navbar a:hover {
-    color: rgb(253, 253, 3);
+#pauseBtn {
+    background-color: #ffc107;
+    color: black;
+}
+
+#resetBtn {
+    background-color: #dc3545;
+    color: white;
+}
+
+#lapBtn {
+    background-color: #007bff;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px;
+    margin: 5px auto;
+    width: 200px;
+    border-radius: 5px;
 }
