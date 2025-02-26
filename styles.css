@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    height: 200vh;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ed6161;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    transition: background 0.3s, padding 0.3s;
+}
+
+.navbar.scrolled {
+    background: #00f863;
+    padding: 10px 20px;
+}
+
+.navbar a {
+    color: rgb(246, 248, 249);
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: rgb(253, 253, 3);
+}
